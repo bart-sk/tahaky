@@ -38,7 +38,8 @@
 - Tip:  Často pracujeme v kóde priamo s JSON formátom, odpoveď od HTTP API si radšej pretransformuj do podoby entity. 
 
 ### Change detection
-- Sleduj každú change detection vykonanú nad komponentami.
+- Sleduj každú zmenu stavu aplikácie ktorá môže vyvolať change detection. 
+- Optimalizuj CD v komponentoch, kde sa len dá.
 
 ### Preklady
 - Môžu ti poriadne zamotať hlavu. 
@@ -71,7 +72,7 @@
 - Ak sa chceš vo svojom projekte dobre orientovať, vyhýbaj sa používaniu “any” alebo automatickému typovaniu. 
 - Ak chceš byť v prvej lige použi: 
 ```sh
-$ compiler --noImplicitAny=true ...
+$ tsc --noImplicitAny main.ts
 ```
 
 ### DefinitelyTyped
